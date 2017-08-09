@@ -1,7 +1,17 @@
-
 <?php
-if($_POST["message"]) {
-    mail("jeanmarcjmd@gmail.com", "Form to email message", $_POST["message"], "From: bryanmarshall@wastedpainter.com");
+
+if($_POST["submit"]) {
+    $recipient="your@email.address";
+    $subject="Form to email message";
+    $sender=$_POST["sender"];
+    $senderEmail=$_POST["senderEmail"];
+    $message=$_POST["message"];
+
+    $mailBody="Name: $sender\nEmail: $senderEmail\n\n$message";
+
+    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+
+    $thankYou="<p>Thank you! Your message has been sent.</p>";
 }
 ?>
 <!DOCTYPE html>
@@ -75,12 +85,20 @@ if($_POST["message"]) {
         ?>
       </div>
     </div>
-    <div class="ex-box">
-      <form method="post" action="contact.php">
-          <textarea name="message"></textarea>
-          <input type="submit">
-      </form>
-    </div>
+    <?=$thankYou ?>
+
+   <form method="post" class="contact-form" action="contact.php">
+       <label>Name:</label>
+       <input name="sender">
+       <br /><br />
+       <label>Email address:</label>
+       <input name="senderEmail">
+       <br /><br />
+       <label>Message:</label>
+       <textarea rows="5" cols="20" name="message"></textarea>
+
+       <input type="submit" name="submit">
+   </form>
     <footer>
       <div class="title-and-nav">
        <span class="z-footer">
