@@ -67,9 +67,10 @@ if($_POST["submit"]) {
     <div class="main-container">
       <div class="gallery-title contact">
         <h1>Contact</h1>
+
         <?php echo date('m/d/Y h:i:s a', time()); ?>
 
-        <?php
+        <?php/*
         $servername = "localhost";
         $username = "root";
         $password = "root";
@@ -81,7 +82,7 @@ if($_POST["submit"]) {
         $result = $conn->query($sql);
         while($blog = $result->fetch_assoc()){
           echo $blog["name"] . "<br />";
-        }3
+        }*/
         ?>
       </div>
     </div>
