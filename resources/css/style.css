@@ -1,0 +1,654 @@
+
+body {
+
+  margin: 0;
+}
+
+
+header {
+  position: fixed;
+  display: inline;
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  height: 115px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1;
+  /*border-bottom: 1px solid black;*/
+  padding-top: 1rem;
+  margin-top: 0;
+  top: -0.15rem;
+
+}
+
+.logo {
+  opacity: .6;
+  font-size: 2rem;
+  font-weight: lighter;
+  margin: 0;
+}
+
+.logo img {
+  max-height: 70px;
+}
+
+.main-container {
+    width: 100%;
+    padding-bottom: 200px;
+}
+
+@media only screen and (max-width: 470px) {
+  .main-container {
+    padding-top: 5rem;
+  }
+}
+
+nav {
+  display: block;
+
+}
+
+nav a {
+  opacity: .5;
+}
+
+a:hover {
+  opacity: .85;
+}
+
+.navlink {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+/*============================Mobile Menu============================*/
+
+
+@media only screen and (max-width: 470px) {
+  header{
+    display: none;
+  }
+}
+
+.mobile-menu-header {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  .mobile-menu-header * {
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-menu-header {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  min-width: 100%;
+  width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  max-height: 100%;
+  background-color: solid grey;
+  font-family: 'Alegreya Sans SC';                     /*=============here============*/
+  font-size: 1.2rem;
+}
+
+.mobile-menu-header h1 {
+  color: rgb(127, 127, 127);
+}
+
+a{
+  text-decoration: none;
+}
+.mobile-menu-header ul{
+  z-index: 2;
+}
+
+
+/*============================== Hamburger Menu ============================*/
+.mobile-menu-container {
+  display: inline-flex;
+  justify-content: space-between;
+  position: fixed;
+  margin: 0 auto;
+  z-index: 3;
+  padding: .5em;
+  padding-right: 10em;
+  width: 95%;
+  background-color: white;
+  border-bottom: 2px solid black;
+
+}
+
+.mobile-menu-container h1 {
+
+}
+
+.container {
+  display: flex-block;
+
+}
+
+/* Style Hamburger*/
+.bar1, .bar2, .bar3 {
+  display: block;
+  opacity: .7;
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.bar2{
+  cursor: pointer;
+  vertical-align: middle;
+  height: 5px;
+  font-size: 1.2em;
+  /*margin-top: -14px;
+  margin-bottom: 10px;*/
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+  transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+  transform: rotate(45deg) translate(-8px, -8px) ;
+}
+/*============================= Mobile Menu ==============================*/
+#mobile-menu{
+  position: fixed;
+  text-align: center;
+  list-style: none;
+  background: grey;
+  width: 100%;
+  color: white;
+  padding-top: 3.9em;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, .0), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+#mobile-menu ul{
+  margin: none !important;
+  background-color: solid;
+
+}
+#mobile-menu li{
+  margin: none !important;
+}
+#mobile-menu li a{
+  border-style: solid;
+  border-top:  solid grey;
+  border-left-style: none;
+  border-bottom: none;
+  display:inline-block;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 100%;
+  color: white;
+  transition: background-color 0.6s ease;
+}
+
+#mobile-menu li a:hover{
+  transition: background-color 0.6s ease;
+  background: solid grey;
+}
+
+.menu-hidden{
+  margin-top: -21em;
+}
+
+}
+
+
+
+/*=============================MAIN BANNER===========================*/
+
+.main-banner {
+  height: 35rem;
+  background-image: url(../../resources/imagesWP/jpg/dummyphoto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 885px) {
+  .main-banner{
+    background-position: center;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .main-banner {
+    display: none;
+  }
+}
+
+.gallery-title {
+  font-family: 'Nunito', sans-serif;
+  color: rgb(167, 167, 167);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-left: 1.5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  letter-spacing: 1.5rem;
+  text-align: center;
+}
+
+
+
+/*===============================Gallery===========================*/
+
+
+.gallery-grid {
+/*  flex-flow: row wrap;
+  text-align: center;*/
+}
+
+.art-box {
+  max-height: 10rem;
+  max-width: 17rem;
+  display: inline-block;
+  text-align: center;
+  align-items: center;
+  margin: 3rem 3rem;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.art-box img {
+  display: block;
+  height: 10rem;
+  width: 100%;
+}
+
+
+
+
+/*================================Lightbox=========================*/
+
+.table {
+	display: table;
+	margin: 0 auto;
+}
+
+.lb-album {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.lb-album ul{
+	font-family: 'BebasNeueRegular', 'Arial Narrow', Arial, sans-serif;
+}
+.lb-album li{
+	list-style-type: none;
+  padding:30px 30px;
+	margin-left: auto;
+  margin-right: auto;
+/*	padding: 25px 25px;*/
+}
+
+
+.lb-album li > a,
+.lb-album li > a img{
+	display: block;
+}
+
+
+.lb-album li > a{
+	width: 250px;
+	height: 140px;
+	position: relative;
+	padding: 10px;
+	background: rbg(127, 127, 127);
+	/*-webkit-box-shadow: 1px 1px 2px #fff, 1px 1px 2px rgba(158,111,86,0.3) inset;
+	-moz-box-shadow: 1px 1px 2px #fff, 1px 1px 2px rgba(158,111,86,0.3) inset;
+	box-shadow: 1px 1px 2px #fff, 1px 1px 2px rgba(158,111,86,0.3) inset;*/
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px 4px 4px 4px;
+}
+
+
+.lb-album li > a span{
+	position: absolute;
+	width: 250px;
+	height: 140px;
+	top: 10px;
+	left: 10px;
+	text-align: center;
+	line-height: 150px;
+	color: rgba(25, 25, 25, 0.9);
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+	font-size: 24px;
+	opacity: 0;
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+	background: rgba(127, 127, 127,0.5);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%, rgba(241,210,194,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.56)), color-stop(100%,rgba(241,210,194,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(127,127,127,0.5)) 0%,rgba(241,210,194,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+	background: radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+	-webkit-transition: opacity 0.3s linear;
+	-moz-transition: opacity 0.3s linear;
+	-o-transition: opacity 0.3s linear;
+	-ms-transition: opacity 0.3s linear;
+	transition: opacity 0.3s linear;
+}
+
+
+.lb-album li > a:hover span{
+	opacity: 1;
+	filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+}
+
+
+.lb-overlay{
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	overflow: hidden;
+	left: 0px;
+	top: 0px;
+	padding: 0px;
+	z-index: 1001;
+	text-align: center;
+	background: rgb(127, 127, 127);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%, rgba(241,210,194,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,0.56)), color-stop(100%,rgba(241,210,194,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(127, 127,127,0.56) 0%,rgba(51,51,51,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+	background: radial-gradient(center, ellipse cover, rgba(255,255,255,0.56) 0%,rgba(241,210,194,1) 100%);
+}
+.lb-overlay > div{
+	position: relative;
+	color: rgba(127, 127, 127);
+	width: 550px;
+	height: 80px;
+	margin: 40px auto 0px auto;
+	text-shadow: 0px 1px 1px rgba(255,255,255,0.6);
+}
+
+@media only screen and (max-width: 750px) {
+  .lb-overlay > div {
+    width: 80%;
+  }
+}
+
+.lb-overlay div h3,
+.lb-overlay div p{
+	padding: 0px 20px;
+	width: 200px;
+	height: 60px;
+}
+
+@media only screen and (max-width: 750px) {
+  .lb-overlay div h3,
+  .lb-overlay div p{
+    padding: 0px 5px;
+    width: 30%;
+    height: 20%;
+  }
+
+}
+
+
+.lb-overlay div h3{
+	font-size: 36px;
+	float: left;
+	text-align: right;
+	/*border-right: 1px solid rgba(27,54,81,0.4);*/
+}
+
+
+@media only screen and (max-width: 750px) {
+    .lb-overlay div h3{
+      font-size: 20px;
+      float: none;
+      text-align: center;
+      padding-bottom: 20px;
+    }
+}
+
+
+.lb-overlay div h3 span,
+.lb-overlay div p{
+	font-size: 16px;
+	font-family: Constantia, Palatino, "Palatino Linotype", "Palatino LT STD", Georgia, serif;
+	font-style: italic;
+}
+
+@media only screen and (max-width: 750px) {
+  .lb-overlay div h3 span,
+  .lb-overlay div p{
+    font-size: 8px;
+    text-align: center;
+    float: none;
+  }
+}
+
+
+.lb-overlay div h3 span{
+	display: block;
+	line-height: 6px;
+}
+.lb-overlay div p{
+	font-size: 14px;
+	text-align: left;
+	float: left;
+	width: 260px;
+}
+.lb-overlay a.lb-close{
+	background: rgba(127, 127, 127);
+	z-index: 1002;
+	color: rgb(127, 127, 127);
+	position: absolute;
+	top: 43px;
+	left: 50%;
+	font-size: 15px;
+	line-height: 26px;
+	text-align: center;
+	width: 50px;
+	height: 23px;
+	overflow: hidden;
+	margin-left: -25px;
+	opacity: 0;
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+	-webkit-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+	box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+}
+.lb-overlay img{
+	/* height: 100%; For Opera max-height does not seem to work */
+	max-height: 80%;
+	position: relative;
+	opacity: 0;
+	filter: alpha(opacity=0); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=0)"; /*IE8*/
+	-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+	-moz-box-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+	box-shadow: 0px 2px 7px rgba(0,0,0,0.2);
+	-webkit-transition: opacity 0.5s linear;
+	-moz-transition: opacity 0.5s linear;
+	-o-transition: opacity 0.5s linear;
+	-ms-transition: opacity 0.5s linear;
+	transition: opacity 0.5s linear;
+}
+.lb-prev, .lb-next{
+	text-indent: -9000px;
+	position: absolute;
+	top: -32px;
+	width: 24px;
+	height: 25px;
+	left: 50%;
+	opacity: 0.8;
+	filter: alpha(opacity=80); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=80)"; /*IE8*/
+}
+.lb-prev:hover, .lb-next:hover{
+	opacity: 1;
+	filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+}
+.lb-prev{
+	margin-left: -30px;
+	background: transparent url(../images/arrows.png) no-repeat top left;
+}
+.lb-next{
+	margin-left: 6px;
+	background: transparent url(../images/arrows.png) no-repeat top right;
+}
+.lb-overlay:target {
+	width: auto;
+	height: auto;
+	bottom: 0px;
+	right: 0px;
+	padding: 80px 100px 120px 100px;
+}
+
+@media only screen and (max-width: 750px) {
+  .lb-overlay:target {
+    padding: 100px 20px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .lb-overlay:target {
+    width: 100%;
+    height: auto;
+    padding: 200px 10px;
+  }
+
+}
+
+
+
+
+
+.lb-overlay:target img,
+.lb-overlay:target a.lb-close{
+	opacity: 1;
+	filter: alpha(opacity=99); /* internet explorer */
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(opacity=99)"; /*IE8*/
+}
+
+
+/*
+	100% Height for Opera as the max-height seems to be ignored, not optimal for large screens
+	http://bricss.net/post/11230266445/css-hack-to-target-opera
+*/
+x:-o-prefocus, .lb-overlay img {
+    height: 100%;
+}
+
+@media only screen and (max-width: 950px) {
+  .lb-overlay img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
+
+}
+
+@media only screen and (max-width: 550px) {
+
+  .lb-overlay img {
+    width: 80%;
+    height: auto;
+  }
+}
+
+
+.lb-overlay .purchase {
+  margin-top: 2
+}
+
+
+/*============================Footer===================================*/
+
+footer {
+  position: absolute;
+  width: 100%;
+  height: 325px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: Gainsboro;
+  margin: 0 auto;
+  margin-bottom: -2000px;
+  font-family: Verdana;
+  font-size: 12px;
+  z-index: 1;
+  bottom: 0;
+}
+
+.title-and-nav {
+  display: block;
+}
+
+.z-footer {
+  display: inline-block;
+  padding-right: 15px;
+  align-items: center;
+  font-family: Georgia;
+  font-size:16px;
+  font-weight: bold;
+  color: white;
+  border-right: 1px solid white;
+}
+
+.z-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+
+footer nav {
+  margin-left: 8px;
+  display: inline-block;
+  padding: 0;
+  padding-bottom: 25px;
+}
+
+
+/****************************Contact page****************************/
+
+.contact {
+  padding-top: 200px;
+  letter-spacing: 1rem;
+}
