@@ -131,7 +131,7 @@
         <div id="pagination_controls"><?php echo $paginationCtrls; ?></div>
       </div>
     </div>
-    <footer>
+    <div id=footer>
       <div class="title-and-nav">
        <span class="z-footer">
          <a href="./index.html">WASTED PAINTER</a>
@@ -148,6 +148,6 @@
           &copy 2017, Wasted Painter
         </p>
       </div>
-    </footer>
+    </div>
   </body>
 </html>
