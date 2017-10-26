@@ -640,6 +640,7 @@ footer {
   flex-direction: column;
   background-color: Gainsboro;
   margin: 0 auto;
+  padding-top: 500px;
   margin-bottom: -2000px;
   font-family: Verdana;
   font-size: 12px;
