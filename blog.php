@@ -92,7 +92,7 @@
         }
 
         $limit = 'LIMIT ' .($pagenum -1) * $page_rows .',' .$page_rows;
-        $sql = "SELECT id, content FROM blog_entries ORDER BY id ASC $limit";
+        $sql = "SELECT id, image, content FROM blog_entries ORDER BY id ASC $limit";
         $query = mysqli_query($conn, $sql);
 
 
@@ -114,14 +114,15 @@
 
         if(isset($_GET['id'])){
           $permalink=$_GET['id'];
-          $sql = "SELECT id, content FROM blog_entries WHERE id=$permalink";
+          $sql = "SELECT id, image, content FROM blog_entries WHERE id=$permalink";
           $query = mysqli_query($conn, $sql);
         }
 
         while ($row = mysqli_fetch_array($query, MYSQLI_ASSOC)){
+          $image= $row["image"];
           $content= $row["content"];
           $id = $row["id"];
-          $list .= '<p>'.$content.'</p><a class="permalinker" href="'.$_SERVER['PHP_SELF'].'?id='.$id.'">Share the Link to this Post</a>' ;
+          $list .= '<p>'.$image.'</p> '<p>'.$content.'</p><a class="permalinker" href="'.$_SERVER['PHP_SELF'].'?id='.$id.'">Share the Link to this Post</a>' ;
         }
 
         ?>
