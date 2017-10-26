@@ -630,7 +630,6 @@ x:-o-prefocus, .lb-overlay img {
 
 footer {
   display: block;
-  position: absolute;
   width: 100%;
   height: 325px;
   align-items: center;
@@ -640,7 +639,6 @@ footer {
   flex-direction: column;
   background-color: Gainsboro;
   margin: 0 auto;
-  padding-top: 500px;
   margin-bottom: -2000px;
   font-family: Verdana;
   font-size: 12px;
