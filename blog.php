@@ -61,7 +61,7 @@
         ini_set('display_errors', 'On');
         $servername = "localhost";
         $username = "root";
-        $password = "root";
+        $password = "rootjmdroot";
         $dbname = "wastedpainter";
 
         $conn = new mysqli($servername, $username, $password, $dbname) or die("Connection not working");
