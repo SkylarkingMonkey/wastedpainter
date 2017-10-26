@@ -263,8 +263,8 @@ a{
 .blog-post {
   font-family: 'Nunito', sans-serif;
   color: rgb(167, 167, 167);
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
@@ -276,6 +276,7 @@ a{
 .permalinker {
   text-decoration: none;
   color: maroon;
+  margin-bottom: 3rem;
 }
 
 .pagectrls {
