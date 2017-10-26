@@ -646,7 +646,7 @@ footer {
   bottom: 0;
 }
 */
-.footer {
+footer {
   position: absolute;
   width: 100%;
   height: 325px;
@@ -684,7 +684,7 @@ footer {
 }
 
 
-.footer nav {
+footer nav {
   margin-left: 8px;
   display: inline-block;
   padding: 0;
