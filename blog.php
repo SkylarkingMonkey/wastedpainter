@@ -122,7 +122,7 @@
           $image= $row["image"];
           $content= $row["content"];
           $id = $row["id"];
-          $list .= '<p><img src="data:image/png;base64,'. base64_encode($image) .'"/><p></p>'.$content.'</p><a class="permalinker" href="'.$_SERVER['PHP_SELF'].'?id='.$id.'">Share the Link to this Post</a>' ;
+          $list .= '<p><img class="portrait-pics" src="data:image/png;base64,'. base64_encode($image) .'"/><p></p>'.$content.'</p><a class="permalinker" href="'.$_SERVER['PHP_SELF'].'?id='.$id.'">Share the Link to this Post</a>' ;
         }
 
 
@@ -131,8 +131,7 @@
         <div id="pagination_controls"><?php echo $paginationCtrls; ?></div>
       </div>
     </div>
-  </div>
-    <footer>
+    <div ="footer">
       <div class="title-and-nav">
        <span class="z-footer">
          <a href="./index.html">WASTED PAINTER</a>
@@ -149,6 +148,6 @@
           &copy 2017, Wasted Painter
         </p>
       </div>
-    </footer>
+    </div>
   </body>
 </html>
