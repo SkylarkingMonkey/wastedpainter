@@ -118,13 +118,14 @@
           $query = mysqli_query($conn, $sql);
         }
 
+        $imagetype='image/png';
         while ($row = mysqli_fetch_array($query, MYSQLI_ASSOC)){
           $image= $row["image"];
           $content= $row["content"];
           $id = $row["id"];
-          $list .= '<p><img src="data:image/png;base64'.base64_encode($image).'"/><p></p>'.$content.'</p><a class="permalinker" href="'.$_SERVER['PHP_SELF'].'?id='.$id.'">Share the Link to this Post</a>' ;
+          $list .= '<p><img src="data:'.$imagetype.';base64'.base64_encode($image).'"/><p></p>'.$content.'</p><a class="permalinker" href="'.$_SERVER['PHP_SELF'].'?id='.$id.'">Share the Link to this Post</a>' ;
         }
-    
+
 
         ?>
         <p><?php echo $list; ?></p>
