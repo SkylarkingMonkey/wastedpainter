@@ -131,7 +131,7 @@
         <div id="pagination_controls"><?php echo $paginationCtrls; ?></div>
       </div>
     </div>
-    <div ="footer">
+    <div class="footer">
       <div class="title-and-nav">
        <span class="z-footer">
          <a href="./index.html">WASTED PAINTER</a>
