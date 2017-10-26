@@ -122,7 +122,7 @@
           $image= $row["image"];
           $content= $row["content"];
           $id = $row["id"];
-          $list .= '<p>'.$image.'</p> '<p>'.$content.'</p><a class="permalinker" href="'.$_SERVER['PHP_SELF'].'?id='.$id.'">Share the Link to this Post</a>' ;
+          $list .= '<p>'.$image.'</p>' '<p>'.$content.'</p><a class="permalinker" href="'.$_SERVER['PHP_SELF'].'?id='.$id.'">Share the Link to this Post</a>' ;
         }
 
         ?>
