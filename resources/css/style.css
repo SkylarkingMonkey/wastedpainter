@@ -276,12 +276,16 @@ a{
 .permalinker {
   text-decoration: none;
   color: maroon;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 .pagectrls {
   text-decoration: none;
   color: #566573;
+}
+
+.portrait-pics {
+  max-width: 20%;
 }
 
 
