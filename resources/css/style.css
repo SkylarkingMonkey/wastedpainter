@@ -261,6 +261,10 @@ a{
 }
 
 .blog-post {
+  padding-bottom: 2.5rem;
+}
+
+.blog-description {
   font-family: 'Nunito', sans-serif;
   color: rgb(167, 167, 167);
   padding-top: 0rem;
