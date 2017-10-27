@@ -122,7 +122,7 @@
           $image= $row["image"];
           $content= $row["content"];
           $id = $row["id"];
-          $list .= '<div class="blog-post"><p><img class="portrait-pics" src="data:image/png;base64,'. base64_encode($image) .'"/><p></p>'.$content.'</p><a class="permalinker" href="'.$_SERVER['PHP_SELF'].'?id='.$id.'">Share the Link to this Post</a></div>' ;
+          $list .= '<div class="blog-description"><p><img class="portrait-pics" src="data:image/png;base64,'. base64_encode($image) .'"/><p></p>'.$content.'</p><a class="permalinker" href="'.$_SERVER['PHP_SELF'].'?id='.$id.'">Share the Link to this Post</a></div>' ;
         }
 
 
